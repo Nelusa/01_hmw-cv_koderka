@@ -248,10 +248,11 @@ ol li {
   display: block;
 }
 
-.footer {
+.footer__copyright {
   color: #333;
   font-style: italic;
   margin-top: 3em;
+  margin-bottom: 1.5em;
 }
 
 /* Media query  */
