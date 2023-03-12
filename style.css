@@ -32,8 +32,49 @@ a:hover {
 ul li,
 ol li {
   list-style-type: none;
+}
+
+ol li {
   padding: 0 10% 0 10%;
   line-height: 30px;
+}
+
+.emoji {
+  font-size: 0.9em;
+  position: absolute;
+  margin-left: 10px;
+}
+
+/* NAVIGATION */
+
+.navigation {
+  background-color: #e2dede;
+  font-size: 0.9em;
+  display: flex;
+}
+
+.navigation ul {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  padding: 0;
+}
+
+.navigation ul li {
+  display: inline-block;
+  line-height: 1.2;
+}
+
+.navigation ul a {
+  display: inline-block;
+  color: #333;
+  font-weight: 600;
+  font-style: normal;
+  padding: 20px 15px;
+}
+
+.navigation ul a:hover {
+  background-color: rgb(246, 222, 231);
 }
 
 /* HEADER */
@@ -106,8 +147,9 @@ ol li {
 /* SECTION */
 
 .section {
-  margin: 1.5em 0;
-  padding: 1em 3em;
+  /* margin: 1.5em 0; */
+  padding: 2em 3em;
+  border-top: 1px dotted #434343;
 }
 
 .section__header {
@@ -130,7 +172,7 @@ ol li {
   font-size: 1.75rem;
   font-weight: 700;
   color: #9c395c;
-  text-decoration: underline #9c395c;
+  text-decoration: #9c395c;
   margin: 1em auto;
   flex-wrap: wrap;
   max-width: 10em;
@@ -212,6 +254,10 @@ ol li {
   padding-bottom: 1em;
 }
 
+.certificate-link {
+  text-decoration: underline;
+}
+
 .section__item-list {
   margin-top: 0.625em;
   /* list-style-type: disc; */
@@ -288,5 +334,9 @@ ol li {
 
   .section__title {
     max-width: none;
+  }
+
+  .navigation ul a {
+    padding: 20px 30px;
   }
 }
